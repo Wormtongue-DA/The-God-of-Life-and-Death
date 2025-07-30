@@ -11,20 +11,19 @@
       height: 100%;
       width: 100%;
       font-family: Garamond, serif;
-      background-color: black; /* This fills the space around the image */
+      background-color: black;
       background-image: url('/The-God-of-Life-and-Death/Frame.png');
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .content-wrapper {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 56%;
-      height: 64%;
-      transform: translate(-50%, -50%);
+      width: 52%;
+      height: 60%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -40,6 +39,9 @@
       background-color: transparent;
       color: #2c1e1e;
       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+      /* Optional: subtle border for layout clarity */
+      border: 1px solid rgba(44, 30, 30, 0.2);
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -47,7 +49,7 @@
   <div class="content-wrapper">
     <div class="content">
       <h1>Your Essay Title</h1>
-      <p>Test paragraph. If you can read this, both the content and frame image are rendering, and the text area is now centered and transparent.</p>
+      <p>Now centered on all screen sizes with width narrowed slightly for better parchment alignment.</p>
     </div>
   </div>
 </body>
