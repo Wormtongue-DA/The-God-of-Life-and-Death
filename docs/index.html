@@ -17,15 +17,15 @@
       background-position: center center;
       background-size: contain;
       display: flex;
-      align-items: flex-start; /* 👈 Anchor top instead of center */
+      align-items: flex-start;
       justify-content: center;
     }
 
     .content-wrapper {
       width: 100%;
       max-width: 720px;
-      height: 500px;         /* Shorter height */
-      margin-top: 360px;      /* 👈 Adjust this to control vertical placement */
+      height: 500px;
+      margin-top: 360px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,19 +38,17 @@
       overflow-y: auto;
       font-size: 1.1rem;
       line-height: 1.6;
-      background-color: rgba(255, 255, 240, 0.9); /* TEMP: visible background */
+      background-color: transparent; /* ✅ Fully transparent */
       color: #2c1e1e;
-      border: 2px solid rgba(44, 30, 30, 0.6);     /* TEMP: visible border */
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
   <div class="content-wrapper">
     <div class="content">
-      <h1>Anchored Top Edge</h1>
-      <p>This layout uses <code>align-items: flex-start</code> to keep the top edge fixed, and <code>margin-top</code> to fine-tune vertical position.</p>
+      <h1>The God of Life and Death</h1>
+      <p>The text box is now fully transparent, positioned and sized to fit neatly within your parchment frame.</p>
+      <p>As your essay grows in length, it will scroll vertically inside this area.</p>
     </div>
   </div>
 </body>
