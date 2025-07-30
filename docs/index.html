@@ -24,7 +24,8 @@
     .content-wrapper {
       width: 100%;
       max-width: 720px;
-      height: 500px; /* 👈 reduced from 570px to bring bottom edge up */
+      height: 500px;            /* Reduced height to shorten bottom */
+      margin-bottom: -20px;     /* 👈 Pull whole box upward */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -48,8 +49,8 @@
 <body>
   <div class="content-wrapper">
     <div class="content">
-      <h1>Final Layout Test</h1>
-      <p>This version keeps the top edge in place, but trims the bottom by reducing <code>height: 540px</code> in the wrapper. Adjust further if needed.</p>
+      <h1>Test: Final Box Adjustment</h1>
+      <p>This version keeps the new height (500px), but adds a <code>margin-bottom: -20px</code> to lift the box up slightly and restore the top edge.</p>
     </div>
   </div>
 </body>
