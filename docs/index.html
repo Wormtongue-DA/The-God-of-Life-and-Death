@@ -29,6 +29,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      scroll-behavior: smooth; /* Optional: smoother scrolling */
     }
 
     .content {
@@ -38,8 +39,30 @@
       overflow-y: auto;
       font-size: 1.1rem;
       line-height: 1.6;
-      background-color: transparent; /* ✅ Fully transparent */
+      background-color: transparent;
       color: #2c1e1e;
+    }
+
+    h1 {
+      font-family: 'Times New Roman', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    .content p::first-line {
+      font-variant-ligatures: common-ligatures;
+    }
+
+    .content p {
+      text-align: justify;
     }
   </style>
 </head>
@@ -47,8 +70,18 @@
   <div class="content-wrapper">
     <div class="content">
       <h1>The God of Life and Death</h1>
-      <p>The text box is now fully transparent, positioned and sized to fit neatly within your parchment frame.</p>
-      <p>As your essay grows in length, it will scroll vertically inside this area.</p>
+      <p style="font-style: italic; font-size: 0.9rem; margin-top: -1rem; margin-bottom: 2rem;">By Wormtongue</p>
+
+      <h2>I. The Forgotten God</h2>
+      <p>
+        <span style="float: left; font-size: 2.5rem; line-height: 1; padding-right: 0.1em; font-family: Garamond, serif;">D</span>
+        eath has existed since the beginning, but for death to exist, there must first be life. Grinneal, god of the land and the cycle of life, guardian of the soul, has been present in our lore since the dawning of Aosda and the golden age of Hy-Brasyl.
+      </p>
+      <p>While some claim that Grinneal is dead, or lies dormant like Danaan and Chadul, I propose this is only partially true. Grinneal has not vanished, but transformed—reborn through death itself. In this new form, he is known as Sgrios, god of decay and the end of all things.</p>
+
+      <h2>II. Divine Fragmentation</h2>
+      <p>With the shattering of Aosda and the fall of Hy-Brasyl, the divine spheres fractured. Gods emerged with sharper domains, and Grinneal’s broad authority began to fade. Cail took up the mantle of growth. Ceannlaidir and Glioca embodied strength and love. In this partitioning, Grinneal was left only with what remained: death.</p>
+      <p>It is here, in this divine unraveling, that we find the seed of Sgrios.</p>
     </div>
   </div>
 </body>
