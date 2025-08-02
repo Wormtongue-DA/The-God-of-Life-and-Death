@@ -60,7 +60,7 @@ body {
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding-right: 0.4rem;
-  padding-bottom: 15rem;
+  padding-bottom: 20vh;
 }
 
 .content::-webkit-scrollbar {
